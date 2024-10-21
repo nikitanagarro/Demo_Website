@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav-menu" id="nav-bar">
+      <a href="#home" class="nav-menu-item">Home</a>
+      <a href="#about" class="nav-menu-item">About Us</a>
+      <a href="#services" class="nav-menu-item">Services</a>
+      <a href="#payment" class="nav-menu-item">Easy payment</a>
+      <a href="#data" class="nav-menu-item">Open Data</a>
+      <a href="#contact" class="nav-menu-item">Contact Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="onHamburgerClick()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <video width="100%" height="100%" autoplay muted loop>
+      <source src="../images//dm-banner-latest.mp4" type="video/mp4">
+    </video>
+    <div class="banner-info">
+      <p>Making Dubai more</p>
+      <p>Livable</p>
+      <p>every day</p>
+    </div>
+  </section>
+
+  <section class="tab-container">
+    <h2>Check & Pay</h2>
+    <p> Towards constructing a futuristic metropolis is propelled by cutting-edge technological breakthroughs in pivotal
+      industries.</p>
+
+    <div class="tab">
+      <button class="tablinks active" onclick="openContent(event, 'Payments')">Payments</button>
+      <button class="tablinks" onclick="openContent(event, 'Track')">Track Request</button>
+      <button class="tablinks" onclick="openContent(event, 'Verify')">Verification</button>
+    </div>
+
+    <div id="Payments" class="tabcontent">
+      <input type="text" class="tab-inputs" placeholder="Please enter Voucher Number">
+      <button class="tab-button">Pay Instantly</button>
+    </div>
+
+    <div id="Track" class="tabcontent">
+      <input type="text" class="tab-inputs" placeholder="Please enter Service Number">
+      <button class="tab-button">Search</button>
+    </div>
+
+    <div id="Verify" class="tabcontent">
+      <input type="text" class="tab-inputs" placeholder="Please enter Verification Code">
+      <button class="tab-button">View</button>
+    </div>
+  </section>
+
+  <section class="tab-container" id="tabs-mobile">
+    <h2>Check & Pay</h2>
+    <p> Towards constructing a futuristic metropolis is propelled by cutting-edge technological breakthroughs in pivotal
+      industries.</p>
+
+    <button class="accordion" onclick="onAccordianClick(event)">Payments</button>
+    <div class="panel" id="Payments-mobile">
+      <input type="text" class="tab-inputs" placeholder="Please enter Voucher Number">
+      <button class="tab-button">Pay Instantly</button>
+    </div>
+
+    <button class="accordion" onclick="onAccordianClick(event)">Track Request</button>
+    <div class="panel">
+      <input type="text" class="tab-inputs" placeholder="Please enter Service Number">
+      <button class="tab-button">Search</button>
+    </div>
+
+    <button class="accordion" onclick="onAccordianClick(event)">Verification</button>
+    <div class="panel">
+      <input type="text" class="tab-inputs" placeholder="Please enter Verification Code">
+      <button class="tab-button">View</button>
+    </div>
+  </section>
+
+  <section class="card-section">
+    <h2>Making Dubai More Every Day. </h2>
+    <h5>The Dubai Municipality impact pillars define our commitment to the city and its people.</h5>
+
+    <div class="cards-layout">
+      <div class="cards-container">
+        <div class="card-sub-container">
+          <div class="card">
+            <i class="fa fa-pagelines" aria-hidden="true"></i>
+            <h2>Beautiful</h2>
+            <h4>Designing beautiful spaces to enrich lives.</h4>
+            <p class="more-link">Learn More></p>
+          </div>
+          <div class="card">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <h2>Livable</h2>
+            <h4>Empowering Growth and A Thriving Economy.</h4>
+            <p class="more-link">Learn More></p>
+          </div>
+        </div>
+        <div class="card-sub-container">
+          <div class="card">
+            <i class="fa fa-flag" aria-hidden="true"></i>
+            <h2>Pioneering</h2>
+            <h4>Shaping tomorrow, today: Our Smart City journey.</h4>
+            <p class="more-link">Learn More></p>
+          </div>
+          <div class="card">
+            <i class="fa fa-building" aria-hidden="true"></i>
+            <h2>Sustainable</h2>
+            <h4>Nurturing Tomorrow: our commitment to sustainability.</h4>
+            <p class="more-link">Learn More></p>
+          </div>
+        </div>
+      </div>
+      <div class="big-card">
+        <div class="title-card">
+          <p>Deira Clocktower Makeover</p>
+          <p>Learn More ></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <section class="footer-container">
+      <div class="footer-section">
+        <p class="footer-header">Quick Links</p>
+        <p>FAQ</p>
+        <p>Carrers</p>
+        <p>SiteMap</p>
+        <p>Contact Us</p>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <p class="footer-header"> Website T&C</p>
+        <p>Accessibility</p>
+        <p>Terms & Condition</p>
+        <p>Security & Privacy</p>
+      </div>
+
+
+      <div class="footer-section">
+        <p class="footer-header">Download App</p>
+        <div class="horizontal-icons">
+          <i class="fa fa-android" aria-hidden="true"></i>
+          <i class="fa fa-apple" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <p class="footer-header">Social Media</p>
+        <div class="horizontal-icons">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+
+</body>
+
+</html>
